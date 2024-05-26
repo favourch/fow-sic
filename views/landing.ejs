@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Landing Page</title>
+  <title>FoW SIC</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -67,10 +67,16 @@
     button:hover {
       background-color: #feb47b;
     }
+    .footer {
+      margin-top: 20px;
+      font-size: 1em;
+      color: #666;
+      opacity: 0.1;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome</h1>
+  <h1>Welcome To the Agile Challenge Cards Activity</h1>
   <div class="button-container">
     <a href="/teacher" class="button">Teacher</a>
     <button class="button" onclick="showStudentInput()">Student</button>
@@ -81,6 +87,9 @@
       <input type="text" id="code" name="code" required>
       <button type="submit">Submit</button>
     </form>
+  </div>
+  <div class="footer">
+    Made with sustainability in mind by <a href="https://linkedin.com/in/favour-chukwuedo">Favour C.</a>
   </div>
   <script>
     function showStudentInput() {
