@@ -1,0 +1,61 @@
+{
+  "code": "ztCgTqOfB",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "How can we make sure that trees and plants we move to new places survive better?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#A261B8"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "7",
+        "problem_statement": "How can we make getting clean water from the sea more efficient?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+        "color": "#C9609A"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "15",
+        "problem_statement": "How can planting more trees help reduce wildfire risks?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#415D53"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "17",
+        "problem_statement": "How can we use the knowledge of indigenous people to help save forests?",
+        "image": "url/to/image",
+        "goalTitle": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+        "color": "#B41DA0"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "2",
+        "problem_statement": "How can we make cities friendlier for bees to help grow more food?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+        "color": "#FD0558"
+      }
+    }
+  ],
+  "visitCount": 2
+}

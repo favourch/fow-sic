@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const shortid = require('shortid');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 const PORT = 3000;
@@ -10,6 +11,7 @@ const PORT = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // Define focus areas and their corresponding JSON files
 const focusAreas = [
@@ -73,6 +75,7 @@ app.post('/create-groups', async (req, res) => {
   const sessionData = {
     code: uniqueCode,
     groups,
+    visitCount: 0 // Initialize visit count
   };
 
   // Save session data to a JSON file
@@ -93,8 +96,15 @@ app.get('/groups/:code', (req, res) => {
   const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
 
   if (fs.existsSync(sessionFilePath)) {
-    const sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
-    res.render('groups', { groups: sessionData.groups, code });
+    let sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
+
+    if (!req.cookies[`visited_${code}`]) {
+      sessionData.visitCount = (sessionData.visitCount || 0) + 1; // Increment visit count
+      fs.writeFileSync(sessionFilePath, JSON.stringify(sessionData, null, 2)); // Save updated session data
+      res.cookie(`visited_${code}`, 'yes', { maxAge: 24 * 60 * 60 * 1000 }); // Set cookie for 24 hours
+    }
+
+    res.render('groups', { groups: sessionData.groups, code, visitCount: sessionData.visitCount });
   } else {
     res.status(404).send('Invalid code.');
   }

@@ -15,6 +15,17 @@
       text-align: center;
       overflow: hidden;
     }
+    .visit-count {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.2em;
+      color: #333;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
     .blurred {
       filter: blur(5px);
       pointer-events: none;
@@ -160,8 +171,8 @@
         <div class="card" id="card-<%= index %>">
           <div class="front">
             <% if (group.problem && group.problem.SDG) { %>
-                <img src="https://raw.githubusercontent.com/favourch/sdg-logos/main/<%= group.problem.SDG %>.png" alt="SDG Logo">
-              <% } %>
+              <img src="https://raw.githubusercontent.com/favourch/sdg-logos/main/<%= group.problem.SDG %>.png" alt="SDG Logo">
+            <% } %>
           </div>
           <div class="back">
             <h2><%= group.name %></h2>
@@ -179,6 +190,9 @@
   </div>
   <div class="class-code">
     Class Code: <%= code %>
+  </div>
+  <div class="visit-count">
+    Visits: <%= visitCount %>
   </div>
   <script>
     function toggleFlip() {
