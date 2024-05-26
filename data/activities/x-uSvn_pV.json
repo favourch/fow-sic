@@ -1,0 +1,15 @@
+{
+  "code": "x-uSvn_pV",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "2",
+        "problem_statement": "What can we do to attract more different kinds of bees to our farms to grow better crops?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture"
+      }
+    }
+  ]
+}

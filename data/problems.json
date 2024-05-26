@@ -1,0 +1,27 @@
+[
+    {
+      "focus_area": "Bees/Plants",
+      "SDG": "15",
+      "problem_statement": "Problem statement related to Bees/Plants",
+      "image": "url/to/image"
+    },
+    {
+      "focus_area": "Fresh Water/Oceans",
+      "SDG": "14",
+      "problem_statement": "Problem statement related to Fresh Water/Oceans",
+      "image": "url/to/image"
+    },
+    {
+      "focus_area": "Fires/Floods",
+      "SDG": "13",
+      "problem_statement": "Problem statement related to Fires/Floods",
+      "image": "url/to/image"
+    },
+    {
+      "focus_area": "Trees/Forests/Jungle",
+      "SDG": "15",
+      "problem_statement": "Problem statement related to Trees/Forests/Jungle",
+      "image": "url/to/image"
+    }
+  ]
+  

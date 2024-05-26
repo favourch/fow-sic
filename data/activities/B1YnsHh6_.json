@@ -1,0 +1,55 @@
+{
+  "code": "B1YnsHh6_",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "3",
+        "problem_statement": "How can having a variety of plants help us fight malnutrition?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure healthy lives and promote well-being for all at all ages"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "How can we make freshwater systems stronger against climate change?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "What are the social and economic effects of frequent floods?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "17",
+        "problem_statement": "How can we use the knowledge of indigenous people to help save forests?",
+        "image": "url/to/image",
+        "goalTitle": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "11",
+        "problem_statement": "How can rooftop gardens make cities greener?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable"
+      }
+    }
+  ]
+}

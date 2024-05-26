@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Areas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .main-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main-title h1 {
+      font-size: 2.5em;
+      color: #ff7e5f;
+      margin: 5px 0;
+    }
+    .main-title h2 {
+      font-size: 1.8em;
+      color: #ff7e5f;
+      margin: 5px 0;
+    }
+    .main-title h3 {
+      font-size: 1.5em;
+      color: #ff7e5f;
+      margin: 5px 0;
+    }
+    .tile-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      padding: 0 10px; /* Add padding for better spacing */
+    }
+    .tile {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: top;
+      line-height: 200px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .tile:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    label {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    input[type="number"] {
+      padding: 10px;
+      font-size: 1em;
+      border: 2px solid #ff7e5f;
+      border-radius: 5px;
+      width: 60px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #ff7e5f;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #feb47b;
+    }
+    @media (max-width: 600px) {
+      .tile-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+        gap: 10px; /* Gap between tiles */
+      }
+      .tile {
+        width: 100%; /* Full width within the grid */
+        height: auto; /* Auto height to maintain aspect ratio */
+        line-height: initial; /* Reset line height */
+        padding: 20px 0; /* Padding to center content */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-title">
+    <h1>Future Of Work Sustainability Innovation Camp</h1>
+    <h2>Sustainability Innovation Camp</h2>
+    <h3>Focus Areas</h3>
+  </div>
+  <div class="tile-container">
+    <% focusAreas.forEach(area => { %>
+      <div class="tile"><%= area.name %></div>
+    <% }); %>
+  </div>
+  <form action="/create-groups" method="POST">
+    <label for="groupCount">Number of Groups (max 10):</label>
+    <input type="number" id="groupCount" name="groupCount" min="1" max="10" required>
+    <button type="submit">Create Groups</button>
+  </form>
+</body>
+</html>

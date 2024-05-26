@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ff7e5f;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #ff7e5f;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #feb47b;
+    }
+    .form-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1em;
+      border: 2px solid #ff7e5f;
+      border-radius: 5px;
+      width: 200px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #ff7e5f;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #feb47b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <div class="button-container">
+    <a href="/teacher" class="button">Teacher</a>
+    <button class="button" onclick="showStudentInput()">Student</button>
+  </div>
+  <div id="student-input" class="form-container" style="display: none;">
+    <form action="/groups" method="GET">
+      <label for="code">Enter Code:</label>
+      <input type="text" id="code" name="code" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script>
+    function showStudentInput() {
+      document.getElementById('student-input').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

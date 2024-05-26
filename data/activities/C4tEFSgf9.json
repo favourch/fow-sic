@@ -1,0 +1,15 @@
+{
+  "code": "C4tEFSgf9",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "9",
+        "problem_statement": "How can we use technology to keep bees safe?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "code": "HilIb_rea",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "What are some easy ways to make gardens friendly for bees?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "What are the effects of ocean acidification on sea life?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "13",
+        "problem_statement": "How is climate change affecting the frequency and intensity of floods?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "15",
+        "problem_statement": "How do invasive species harm forests, and what can we do about it?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "4",
+        "problem_statement": "How can schools help protect plants and bees?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all"
+      }
+    }
+  ]
+}
