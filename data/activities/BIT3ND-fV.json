@@ -1,0 +1,60 @@
+{
+  "code": "BIT3ND-fV",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "3",
+        "problem_statement": "How can having a variety of plants help us fight malnutrition?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure healthy lives and promote well-being for all at all ages",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/3.png"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What are the best ways to fish without harming the environment?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/14.png"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "How can using fire-resistant materials reduce wildfire damage?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/11.png"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "15",
+        "problem_statement": "How can we bring back forests that have been damaged?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/15.png"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "How can we control invasive plants to help native bees?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/15.png"
+      }
+    }
+  ]
+}

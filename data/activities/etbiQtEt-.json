@@ -1,0 +1,49 @@
+{
+  "code": "etbiQtEt-",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "What can we do to protect rare and endangered plants?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#028CB8"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "How can we protect coral reefs from climate change?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#382DF8"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "6",
+        "problem_statement": "How can managing rivers help reduce the risk of floods?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#59A4E1"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "9",
+        "problem_statement": "How can we use technology to keep track of forest health?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+        "color": "#1CDF8D"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "LYSVGAfpi",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "13",
+        "problem_statement": "How is climate change affecting bees and their travel patterns?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#E044CF"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What are some innovative ways to clean up oil spills?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#3A930E"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "15",
+        "problem_statement": "How can controlled burns help manage wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#0B77AF"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "15",
+        "problem_statement": "How does breaking up forests into smaller parts affect wildlife?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#FFDDD2"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "How can we control invasive plants to help native bees?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#087D56"
+      }
+    }
+  ]
+}

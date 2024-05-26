@@ -1,0 +1,60 @@
+{
+  "code": "rH9BUKwQc",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "17",
+        "problem_statement": "How can citizen science projects help protect plants and bees?",
+        "image": "url/to/image",
+        "goalTitle": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+        "color": "#A0D346"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "11",
+        "problem_statement": "How can coastal towns deal with rising sea levels?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#18D610"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "13",
+        "problem_statement": "How can we prevent wildfires and stop them quickly?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#D3D103"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "15",
+        "problem_statement": "How do invasive species harm forests, and what can we do about it?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#AA61E2"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "11",
+        "problem_statement": "How can community gardens help improve city life and provide more food?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#C4F0C1"
+      }
+    }
+  ]
+}

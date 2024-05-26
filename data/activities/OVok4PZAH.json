@@ -1,0 +1,55 @@
+{
+  "code": "OVok4PZAH",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "Why are bees important for keeping our environment healthy?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "How can wetlands help clean water and control floods?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "15",
+        "problem_statement": "How can controlled burns help manage wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "2",
+        "problem_statement": "How can growing trees and crops together help feed people and protect the environment?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "9",
+        "problem_statement": "How can we use technology to keep bees safe?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation"
+      }
+    }
+  ]
+}

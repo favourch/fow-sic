@@ -29,6 +29,16 @@ const getGoalTitle = (sdgCode) => {
   return goal ? goal.title : 'Unknown Goal';
 };
 
+// Function to get a random color
+const getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
 // Landing page route
 app.get('/', (req, res) => {
   res.render('landing');
@@ -40,20 +50,21 @@ app.get('/teacher', (req, res) => {
 });
 
 // Route for creating groups
-app.post('/create-groups', (req, res) => {
+app.post('/create-groups', async (req, res) => {
   const { groupCount } = req.body;
   const groups = Array.from({ length: groupCount }, (_, i) => ({
     name: `Group ${i + 1}`,
     problem: null
   }));
 
-  // Assign problems to groups
+  // Assign problems and random colors to groups
   groups.forEach((group, index) => {
     const focusArea = focusAreas[index % focusAreas.length];
     const filePath = path.join(__dirname, 'data', 'focus-areas', focusArea.file);
     const focusAreaProblems = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const randomProblem = focusAreaProblems[Math.floor(Math.random() * focusAreaProblems.length)];
     randomProblem.goalTitle = getGoalTitle(randomProblem.SDG);
+    randomProblem.color = getRandomColor();
     group.problem = randomProblem;
   });
 
@@ -78,17 +89,16 @@ app.get('/groups', (req, res) => {
 
 // Route to display groups based on unique code
 app.get('/groups/:code', (req, res) => {
-    const { code } = req.params;
-    const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
-  
-    if (fs.existsSync(sessionFilePath)) {
-      const sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
-      res.render('groups', { groups: sessionData.groups, code });
-    } else {
-      res.status(404).send('Invalid code.');
-    }
-  });
-  
+  const { code } = req.params;
+  const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
+
+  if (fs.existsSync(sessionFilePath)) {
+    const sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
+    res.render('groups', { groups: sessionData.groups, code });
+  } else {
+    res.status(404).send('Invalid code.');
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

@@ -1,0 +1,45 @@
+{
+  "code": "xw1yGSHoN",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "12",
+        "problem_statement": "What are some fun ways to teach people about the importance of bees?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure sustainable consumption and production patterns"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "What are the effects of tiny plastic pieces on marine life?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "6",
+        "problem_statement": "How can managing rivers help reduce the risk of floods?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "15",
+        "problem_statement": "How can we bring back forests that have been damaged?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
+      }
+    }
+  ]
+}

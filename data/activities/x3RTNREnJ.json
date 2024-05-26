@@ -1,0 +1,60 @@
+{
+  "code": "x3RTNREnJ",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "Why are bees important for keeping our environment healthy?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#35793B"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "What are the effects of ocean acidification on sea life?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#45F317"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "What are the social and economic effects of frequent floods?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#D3F48C"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "13",
+        "problem_statement": "What are the benefits of planting more trees and creating new forests?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#A37911"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "11",
+        "problem_statement": "How can rooftop gardens make cities greener?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#AA0EAE"
+      }
+    }
+  ]
+}

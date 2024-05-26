@@ -1,0 +1,38 @@
+{
+  "code": "kwsmyTeci",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "Why are bees important for keeping our environment healthy?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#2CFC67"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "How can we better manage freshwater in dry areas?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#3FA85E"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "9",
+        "problem_statement": "What technologies can we use to watch and control wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+        "color": "#349E60"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "zG2JZP4TW",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "11",
+        "problem_statement": "How can community gardens help improve city life and provide more food?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/11.png"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "How can we reduce plastic pollution in oceans?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/14.png"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "15",
+        "problem_statement": "How can controlled burns help manage wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/15.png"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "2",
+        "problem_statement": "How can growing trees and crops together help feed people and protect the environment?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/2.png"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "How can we make sure that trees and plants we move to new places survive better?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "logo_url": "https://raw.githubusercontent.com/favourch/sdg-logos/main/15.png"
+      }
+    }
+  ]
+}

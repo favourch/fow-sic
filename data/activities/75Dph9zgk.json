@@ -1,0 +1,71 @@
+{
+  "code": "75Dph9zgk",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "How can we bring back native plants to areas where they have disappeared?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#C7FF50"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "How can we protect coral reefs from climate change?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#987E2E"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "8",
+        "problem_statement": "How can insurance help manage flood risks?",
+        "image": "url/to/image",
+        "goalTitle": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+        "color": "#F2DFE0"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "8",
+        "problem_statement": "What are the economic benefits of taking care of forests sustainably?",
+        "image": "url/to/image",
+        "goalTitle": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+        "color": "#B9E3F2"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "What can we do to reduce the use of pesticides that harm bees?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#37D624"
+      }
+    },
+    {
+      "name": "Group 6",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What are some innovative ways to clean up oil spills?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#7EA25D"
+      }
+    }
+  ]
+}

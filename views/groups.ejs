@@ -60,7 +60,10 @@
       transform: rotateY(180deg);
     }
     .card.zoomed {
-      transform: scale(2);
+      transform: scale(2) translate(-50%, -50%);
+      position: fixed;
+      top: 50%;
+      left: 50%;
       z-index: 1000;
     }
     .card .front, .card .back {
@@ -81,6 +84,11 @@
       justify-content: center;
       flex-direction: column;
       color: white;
+    }
+    .card .front img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-bottom: 15px;
     }
     .card .back {
       background-color: white;
@@ -150,12 +158,16 @@
     <% groups.forEach((group, index) => { %>
       <div class="container">
         <div class="card" id="card-<%= index %>">
-          <div class="front"></div>
+          <div class="front">
+            <% if (group.problem && group.problem.SDG) { %>
+                <img src="https://raw.githubusercontent.com/favourch/sdg-logos/main/<%= group.problem.SDG %>.png" alt="SDG Logo">
+              <% } %>
+          </div>
           <div class="back">
             <h2><%= group.name %></h2>
             <% if (group.problem) { %>
               <p><%= group.problem.problem_statement %></p>
-              <p><strong>SDG:</strong> <%= group.problem.SDG %></p>
+              <!-- <p><strong>SDG:</strong> <%= group.problem.SDG %></p> -->
               <p class="goal-desc"><strong>Goal:</strong> <%= group.problem.goalTitle %></p>
             <% } else { %>
               <p>No problem assigned</p>

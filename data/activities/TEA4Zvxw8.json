@@ -1,0 +1,55 @@
+{
+  "code": "TEA4Zvxw8",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "9",
+        "problem_statement": "How can we use technology to keep bees safe?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation"
+      }
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "How can community efforts improve local water quality?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all"
+      }
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "How can we build structures that can withstand floods?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable"
+      }
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "9",
+        "problem_statement": "How can we use technology to keep track of forest health?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation"
+      }
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "12",
+        "problem_statement": "What are some fun ways to teach people about the importance of bees?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure sustainable consumption and production patterns"
+      }
+    }
+  ]
+}
