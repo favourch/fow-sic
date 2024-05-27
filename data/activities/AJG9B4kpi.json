@@ -1,0 +1,58 @@
+{
+  "code": "AJG9B4kpi",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "What can we do to protect rare and endangered plants?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#56C02B"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "7",
+        "problem_statement": "How can we make getting clean water from the sea more efficient?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+        "color": "#FCC30B"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "13",
+        "problem_statement": "How can we prevent wildfires and stop them quickly?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "13",
+        "problem_statement": "What are the benefits of planting more trees and creating new forests?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 1
+}

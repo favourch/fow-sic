@@ -1,0 +1,58 @@
+{
+  "code": "ZDaHgK1Os",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "What can we do to protect rare and endangered plants?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#C6D588"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What can we do to stop overfishing?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#D4AB00"
+      },
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "15",
+        "problem_statement": "How can taking care of plants and trees help reduce wildfire risk?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#6BBB2A"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "12",
+        "problem_statement": "What are the best ways to take care of forests without harming them?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure sustainable consumption and production patterns",
+        "color": "#1A1A70"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 1
+}

@@ -1,0 +1,58 @@
+{
+  "code": "nYktkMMgV",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "13",
+        "problem_statement": "How is climate change affecting bees and their travel patterns?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "What are the effects of building dams on rivers?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#26BDE2"
+      },
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "How can city planning help reduce the impact of floods?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "13",
+        "problem_statement": "How do forests help control the amount of carbon dioxide in the air?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 1
+}

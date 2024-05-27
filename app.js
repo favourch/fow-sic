@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const shortid = require('shortid');
 const cookieParser = require('cookie-parser');
+const axios = require('axios');
 
 const app = express();
 const PORT = 3000;
@@ -25,20 +26,16 @@ const focusAreas = [
 const goalsFilePath = path.join(__dirname, 'data', 'goals', 'goals.json');
 const goals = JSON.parse(fs.readFileSync(goalsFilePath, 'utf8'));
 
-// Function to get goal title by SDG code
-const getGoalTitle = (sdgCode) => {
-  const goal = goals.find(g => g.code === sdgCode);
-  return goal ? goal.title : 'Unknown Goal';
-};
-
-// Function to get a random color
-const getRandomColor = () => {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+// Function to get goal details by SDG code
+const getGoalDetails = async (sdgCode) => {
+  try {
+    const response = await axios.get('https://sdg.fchukwuedo.workers.dev/');
+    const goal = response.data.find(g => g.code === sdgCode);
+    return goal ? goal : { title: 'Unknown Goal', color: '#ffffff' };
+  } catch (error) {
+    console.error('Error fetching SDG data:', error);
+    return { title: 'Unknown Goal', color: '#ffffff' };
   }
-  return color;
 };
 
 // Landing page route
@@ -54,28 +51,35 @@ app.get('/teacher', (req, res) => {
 // Route for creating groups
 app.post('/create-groups', async (req, res) => {
   const { groupCount } = req.body;
-  const groups = Array.from({ length: groupCount }, (_, i) => ({
-    name: `Group ${i + 1}`,
-    problem: null
-  }));
+  const groups = [];
 
-  // Assign problems and random colors to groups
-  groups.forEach((group, index) => {
-    const focusArea = focusAreas[index % focusAreas.length];
+  for (let i = 0; i < groupCount; i++) {
+    const group = {
+      name: `Group ${i + 1}`,
+      problem: null,
+      likes: 0,
+      dislikes: 0,
+    };
+
+    const focusArea = focusAreas[i % focusAreas.length];
     const filePath = path.join(__dirname, 'data', 'focus-areas', focusArea.file);
     const focusAreaProblems = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const randomProblem = focusAreaProblems[Math.floor(Math.random() * focusAreaProblems.length)];
-    randomProblem.goalTitle = getGoalTitle(randomProblem.SDG);
-    randomProblem.color = getRandomColor();
+    
+    const goalDetails = await getGoalDetails(randomProblem.SDG);
+    randomProblem.goalTitle = goalDetails.title;
+    randomProblem.color = goalDetails.color;
     group.problem = randomProblem;
-  });
+
+    groups.push(group);
+  }
 
   // Generate unique code for the session
   const uniqueCode = shortid.generate();
   const sessionData = {
     code: uniqueCode,
     groups,
-    visitCount: 0 // Initialize visit count
+    visitCount: 0, // Initialize visit count
   };
 
   // Save session data to a JSON file
@@ -105,6 +109,36 @@ app.get('/groups/:code', (req, res) => {
     }
 
     res.render('groups', { groups: sessionData.groups, code, visitCount: sessionData.visitCount });
+  } else {
+    res.status(404).send('Invalid code.');
+  }
+});
+
+// Endpoint to handle like requests
+app.post('/like/:code/:groupIndex', (req, res) => {
+  const { code, groupIndex } = req.params;
+  const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
+
+  if (fs.existsSync(sessionFilePath)) {
+    let sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
+    sessionData.groups[groupIndex].likes += 1;
+    fs.writeFileSync(sessionFilePath, JSON.stringify(sessionData, null, 2));
+    res.status(200).send('Like recorded');
+  } else {
+    res.status(404).send('Invalid code.');
+  }
+});
+
+// Endpoint to handle dislike requests
+app.post('/dislike/:code/:groupIndex', (req, res) => {
+  const { code, groupIndex } = req.params;
+  const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
+
+  if (fs.existsSync(sessionFilePath)) {
+    let sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
+    sessionData.groups[groupIndex].dislikes += 1;
+    fs.writeFileSync(sessionFilePath, JSON.stringify(sessionData, null, 2));
+    res.status(200).send('Dislike recorded');
   } else {
     res.status(404).send('Invalid code.');
   }

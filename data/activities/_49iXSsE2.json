@@ -1,0 +1,136 @@
+{
+  "code": "_49iXSsE2",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "Why are bees important for keeping our environment healthy?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#D06D65"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "How can we monitor and check the health of water ecosystems?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#649747"
+      },
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "15",
+        "problem_statement": "How can we restore areas affected by wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#AA80E6"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "17",
+        "problem_statement": "How can communities help manage and protect forests?",
+        "image": "url/to/image",
+        "goalTitle": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+        "color": "#26DD4C"
+      },
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "12",
+        "problem_statement": "What can farmers do to protect bees?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure sustainable consumption and production patterns",
+        "color": "#364A46"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 6",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "What are the effects of tiny plastic pieces on marine life?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#153F80"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 7",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "9",
+        "problem_statement": "What technologies can we use to watch and control wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+        "color": "#C90599"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 8",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "6",
+        "problem_statement": "What are the best ways to protect forests that provide clean water?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#257812"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 9",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "2",
+        "problem_statement": "What can we do to attract more different kinds of bees to our farms to grow better crops?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+        "color": "#2B54A3"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 10",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "How can we protect coral reefs from climate change?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#F62F87"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 40
+}

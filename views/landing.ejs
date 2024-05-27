@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FoW SIC</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -13,84 +16,83 @@
       justify-content: center;
       min-height: 100vh;
       margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
     }
     h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
-      color: #ff7e5f;
-    }
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .button {
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 1.2em;
-      color: white;
-      background-color: #ff7e5f;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #feb47b;
-    }
-    .form-container {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    input[type="text"] {
-      padding: 10px;
-      font-size: 1em;
-      border: 2px solid #ff7e5f;
-      border-radius: 5px;
-      width: 200px;
+      color: #201f1f;
       text-align: center;
-      margin-bottom: 20px;
     }
-    button {
-      padding: 10px 20px;
-      font-size: 1.2em;
+    .btn-custom {
+      font-size: 1.5em;
       color: white;
-      background-color: #ff7e5f;
+      background-color: #201f1f;
       border: none;
       border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+      padding: 20px 40px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
     }
-    button:hover {
-      background-color: #feb47b;
+    .btn-custom:hover {
+      background-color: #453535;
+      box-shadow: inset;
+      color: #f0f2f5;
     }
+    /* .form-container {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 300px;
+    } */
     .footer {
       margin-top: 20px;
       font-size: 1em;
       color: #666;
       opacity: 0.1;
+      text-align: center;
+    }
+    .footer a {
+      color: #201f1f;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .centre-input {
+      display: block;
+      text-align: center;
+      max-width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome To the Agile Challenge Cards Activity</h1>
-  <div class="button-container">
-    <a href="/teacher" class="button">Teacher</a>
-    <button class="button" onclick="showStudentInput()">Student</button>
+  <div class="container text-center">
+    <h1>Agile Challenge Cards Activity</h1>
+    <div class="button-container">
+      <a href="/teacher" class="btn btn-custom">Teacher</a>
+      <button class="btn btn-custom" onclick="showStudentInput()">Student</button>
+    </div>
+    <div id="student-input" class="form-container" style="display: none;">
+      <form action="/groups" method="GET">
+        <div class="form-group">
+          <div class="centre-input">
+            <label for="code">Enter Code:</label>
+          <input type="text" id="code" name="code" class="form-control" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-custom">Submit</button>
+      </form>
+    </div>
+    <div class="footer">
+      Made with sustainability in mind by <a href="https://linkedin.com/in/favour-chukwuedo">Favour C.</a>
+    </div>
   </div>
-  <div id="student-input" class="form-container" style="display: none;">
-    <form action="/groups" method="GET">
-      <label for="code">Enter Code:</label>
-      <input type="text" id="code" name="code" required>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  <div class="footer">
-    Made with sustainability in mind by <a href="https://linkedin.com/in/favour-chukwuedo">Favour C.</a>
-  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     function showStudentInput() {
       document.getElementById('student-input').style.display = 'block';

@@ -37,7 +37,7 @@
       padding: 10px 20px;
       font-size: 1.2em;
       color: white;
-      background-color: #ff7e5f;
+      background-color: #201f1f;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -45,7 +45,7 @@
       margin: 5px;
     }
     .toggle-button:hover, .home-button:hover {
-      background-color: #feb47b;
+      background-color: #2a2828;
     }
     .cards-grid {
       display: flex;
@@ -87,7 +87,7 @@
       left: 0;
     }
     .card .front {
-      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      background: #ff7e5f; /* Updated to use solid color */
       z-index: 2;
       transform: rotateY(0deg);
       display: flex;
@@ -100,6 +100,7 @@
       max-width: 100px;
       max-height: 100px;
       margin-bottom: 15px;
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.7); /* White shadow */
     }
     .card .back {
       background-color: white;
@@ -128,7 +129,7 @@
       position: absolute;
       bottom: 20px;
       font-size: 1.2em;
-      color: #a04d38;
+      color: #201f1f;
       background-color: #fff;
       padding: 10px;
       border-radius: 5px;
@@ -140,18 +141,33 @@
     }
     .main-title h1 {
       font-size: 2.5em;
-      color: #ff7e5f;
+      color: #201f1f;
       margin: 5px 0;
     }
     .main-title h2 {
       font-size: 1.8em;
-      color: #ff7e5f;
+      color: #201f1f;
       margin: 5px 0;
     }
     .main-title h3 {
       font-size: 1.5em;
-      color: #ff7e5f;
+      color: #201f1f;
       margin: 5px 0;
+    }
+    .like-dislike {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .like-dislike img {
+      width: 24px;
+      height: 24px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .like-dislike img:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -165,11 +181,14 @@
     <button class="toggle-button" onclick="toggleFlip()">Flip Card</button>
     <button class="home-button" onclick="window.location.href='/'">Home</button>
   </div>
+  <div class="visit-count">
+    Visits: <%= visitCount %>
+  </div>
   <div class="cards-grid">
     <% groups.forEach((group, index) => { %>
       <div class="container">
         <div class="card" id="card-<%= index %>">
-          <div class="front">
+          <div class="front" style="background: <%= group.problem.color %>;">
             <% if (group.problem && group.problem.SDG) { %>
               <img src="https://raw.githubusercontent.com/favourch/sdg-logos/main/<%= group.problem.SDG %>.png" alt="SDG Logo">
             <% } %>
@@ -178,11 +197,14 @@
             <h2><%= group.name %></h2>
             <% if (group.problem) { %>
               <p><%= group.problem.problem_statement %></p>
-              <!-- <p><strong>SDG:</strong> <%= group.problem.SDG %></p> -->
               <p class="goal-desc"><strong>Goal:</strong> <%= group.problem.goalTitle %></p>
             <% } else { %>
               <p>No problem assigned</p>
             <% } %>
+            <div class="like-dislike">
+              <img src="https://img.icons8.com/ios-filled/50/000000/facebook-like.png" alt="Like" onclick="likeCard(<%= index %>)">
+              <img src="https://img.icons8.com/ios-filled/50/000000/thumbs-down.png" alt="Dislike" onclick="dislikeCard(<%= index %>)">
+            </div>
           </div>
         </div>
       </div>
@@ -190,9 +212,6 @@
   </div>
   <div class="class-code">
     Class Code: <%= code %>
-  </div>
-  <div class="visit-count">
-    Visits: <%= visitCount %>
   </div>
   <script>
     function toggleFlip() {
@@ -203,8 +222,8 @@
     }
 
     document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('mouseover', handleMouseOver);
-      card.addEventListener('mouseleave', handleMouseLeave);
+      // card.addEventListener('mouseover', handleMouseOver);
+      // card.addEventListener('mouseleave', handleMouseLeave);
     });
 
     function handleMouseOver(event) {
@@ -222,6 +241,32 @@
       card.classList.remove('zoomed');
       document.querySelectorAll('.card').forEach(c => {
         c.classList.remove('blurred');
+      });
+    }
+
+    function likeCard(index) {
+      const code = '<%= code %>';
+      fetch(`/like/${code}/${index}`, {
+        method: 'POST'
+      }).then(response => {
+        if (response.ok) {
+          alert('Liked!');
+        } else {
+          alert('Error liking the card.');
+        }
+      });
+    }
+
+    function dislikeCard(index) {
+      const code = '<%= code %>';
+      fetch(`/dislike/${code}/${index}`, {
+        method: 'POST'
+      }).then(response => {
+        if (response.ok) {
+          alert('Disliked!');
+        } else {
+          alert('Error disliking the card.');
+        }
       });
     }
   </script>

@@ -1,0 +1,84 @@
+{
+  "code": "Ylx1YEfGB",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "11",
+        "problem_statement": "How does breaking up habitats affect bees and plants?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "7",
+        "problem_statement": "How can we make getting clean water from the sea more efficient?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+        "color": "#FCC30B"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "13",
+        "problem_statement": "How can we prevent wildfires and stop them quickly?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "6",
+        "problem_statement": "What are the best ways to protect forests that provide clean water?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#26BDE2"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "2",
+        "problem_statement": "How can we make cities friendlier for bees to help grow more food?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+        "color": "#DDA63A"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 6",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What are the best ways to fish without harming the environment?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#0A97D9"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 1
+}
