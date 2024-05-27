@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Focus Areas</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -13,6 +16,8 @@
       justify-content: center;
       min-height: 100vh;
       margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
     }
     .main-title {
       text-align: center;
@@ -23,105 +28,77 @@
       color: #201f1f;
       margin: 5px 0;
     }
-    .main-title h2 {
-      font-size: 1.8em;
-      color: #201f1f;
-      margin: 5px 0;
-    }
     .main-title h3 {
       font-size: 1.5em;
       color: #201f1f;
       margin: 5px 0;
     }
-    .tile-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 1000px;
-      padding: 0 10px; /* Add padding for better spacing */
-    }
     .tile {
       display: inline-block;
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      border-radius: 10px;
+      width: 100%;
+      max-width: 300px;
+      height: 100px;
+      margin: 10px; /* Adjust margin for better spacing */
+      border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       background: linear-gradient(to right, #201f1f, #242020);
       color: white;
       font-size: 1.2em;
       font-weight: bold;
       text-align: center;
-      vertical-align: top;
-      line-height: 200px;
+      line-height: 100px; /* Center text vertically */
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .tile:hover {
       transform: scale(1.1);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
-    form {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    label {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-    input[type="number"] {
-      padding: 10px;
-      font-size: 1em;
-      border: 2px solid #201f1f;
-      border-radius: 5px;
-      width: 60px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 1.2em;
-      color: white;
-      background-color: #201f1f;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #302828;
-    }
-    @media (max-width: 600px) {
-      .tile-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
-        gap: 10px; /* Gap between tiles */
-      }
+    @media (max-width: 576px) {
+      
       .tile {
-        width: 100%; /* Full width within the grid */
-        height: auto; /* Auto height to maintain aspect ratio */
-        line-height: initial; /* Reset line height */
-        padding: 20px 0; /* Padding to center content */
+      display: inline-block;
+      width: 100%;
+      max-width: 300px;
+      height: 100px;
+      margin: 10px; /* Adjust margin for better spacing */
+      padding: 10px; /* Adjust margin for better spacing */
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to right, #201f1f, #242020);
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100px; /* Center text vertically */
+      transition: transform 0.3s, box-shadow 0.3s;
       }
     }
   </style>
 </head>
 <body>
-  <div class="main-title">
-    <h1>Future Of Work Sustainability Innovation Camp</h1>
-    <!-- <h2>Sustainability Innovation Camp</h2> -->
-    <h3>Focus Areas</h3>
+  <div class="container text-center">
+    <div class="main-title">
+      <h1>Future Of Work Sustainability Innovation Camp</h1>
+      <h3>Focus Areas</h3>
+    </div>
+    <div class="tile-container row justify-content-center">
+      <% focusAreas.forEach(area => { %>
+        <div class="col-6 col-sm-6 d-flex justify-content-center mb-2">
+          <div class="tile"><%= area.name %></div>
+        </div>
+      <% }); %>
+    </div>
+    <form action="/create-groups" method="POST" class="mt-4">
+      <div class="form-group">
+        <label for="groupCount">Number of Groups (max 10):</label>
+        <input type="number" id="groupCount" name="groupCount" class="form-control" min="1" max="10" required>
+      </div>
+      <button type="submit" class="btn btn-dark">Create Groups</button>
+    </form>
   </div>
-  <div class="tile-container">
-    <% focusAreas.forEach(area => { %>
-      <div class="tile"><%= area.name %></div>
-    <% }); %>
-  </div>
-  <form action="/create-groups" method="POST">
-    <label for="groupCount">Number of Groups (max 10):</label>
-    <input type="number" id="groupCount" name="groupCount" min="1" max="10" required>
-    <button type="submit">Create Groups</button>
-  </form>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

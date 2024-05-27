@@ -1,0 +1,71 @@
+{
+  "code": "ZTDjfV_jJ",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "13",
+        "problem_statement": "How is climate change affecting bees and their travel patterns?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "2",
+        "problem_statement": "How can we save water in farming?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+        "color": "#DDA63A"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "6",
+        "problem_statement": "How can managing rivers help reduce the risk of floods?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#26BDE2"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "13",
+        "problem_statement": "How can paying for ecosystem services help protect forests?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "How can we bring back native plants to areas where they have disappeared?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#56C02B"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 1
+}
