@@ -1,0 +1,136 @@
+{
+  "code": "xXygv_d12",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "11",
+        "problem_statement": "How can rooftop gardens make cities greener?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "How can wetlands help clean water and control floods?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#26BDE2"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "How can communities be better prepared for wildfire emergencies?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "2",
+        "problem_statement": "How can growing trees and crops together help feed people and protect the environment?",
+        "image": "url/to/image",
+        "goalTitle": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+        "color": "#DDA63A"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "13",
+        "problem_statement": "How is climate change affecting bees and their travel patterns?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 6",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "6",
+        "problem_statement": "How can we reduce harmful chemicals running off into freshwater?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#26BDE2"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 7",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "6",
+        "problem_statement": "What are the best practices for restoring floodplains?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure availability and sustainable management of water and sanitation for all",
+        "color": "#26BDE2"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 8",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "13",
+        "problem_statement": "How do forests help control the amount of carbon dioxide in the air?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 9",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "4",
+        "problem_statement": "How can schools help protect plants and bees?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+        "color": "#C5192D"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 10",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "13",
+        "problem_statement": "How can we make freshwater systems stronger against climate change?",
+        "image": "url/to/image",
+        "goalTitle": "Take urgent action to combat climate change and its impacts",
+        "color": "#3F7E44"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 1
+}

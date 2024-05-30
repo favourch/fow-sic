@@ -1,0 +1,136 @@
+{
+  "code": "yW4Oihqfz",
+  "groups": [
+    {
+      "name": "Group 1",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "15",
+        "problem_statement": "What can we do to protect rare and endangered plants?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#56C02B"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 2",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What are some innovative ways to clean up oil spills?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#0A97D9"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 3",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "How can we build structures that can withstand floods?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 4",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "15",
+        "problem_statement": "How do forests support a wide variety of plants and animals?",
+        "image": "url/to/image",
+        "goalTitle": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+        "color": "#56C02B"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 5",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "9",
+        "problem_statement": "How can we use technology to keep bees safe?",
+        "image": "url/to/image",
+        "goalTitle": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+        "color": "#FD6925"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 6",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "14",
+        "problem_statement": "What are the best ways to fish without harming the environment?",
+        "image": "url/to/image",
+        "goalTitle": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+        "color": "#0A97D9"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 7",
+      "problem": {
+        "focus_area": "Fires/Floods",
+        "SDG": "11",
+        "problem_statement": "What are the best ways for communities to prepare for wildfires?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 8",
+      "problem": {
+        "focus_area": "Trees/Forests/Jungle",
+        "SDG": "11",
+        "problem_statement": "How can planting trees in cities make them better places to live?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 9",
+      "problem": {
+        "focus_area": "Bees/Plants",
+        "SDG": "3",
+        "problem_statement": "How can having a variety of plants help us fight malnutrition?",
+        "image": "url/to/image",
+        "goalTitle": "Ensure healthy lives and promote well-being for all at all ages",
+        "color": "#4C9F38"
+      },
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "name": "Group 10",
+      "problem": {
+        "focus_area": "Fresh Water/Oceans",
+        "SDG": "11",
+        "problem_statement": "How can coastal towns deal with rising sea levels?",
+        "image": "url/to/image",
+        "goalTitle": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+        "color": "#FD9D24"
+      },
+      "likes": 0,
+      "dislikes": 0
+    }
+  ],
+  "visitCount": 2
+}

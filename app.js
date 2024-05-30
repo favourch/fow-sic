@@ -56,7 +56,7 @@ app.post('/create-groups', async (req, res) => {
   for (let i = 0; i < groupCount; i++) {
     const group = {
       name: `Group ${i + 1}`,
-      problem: null,
+      problems: [],
       likes: 0,
       dislikes: 0,
     };
@@ -64,13 +64,18 @@ app.post('/create-groups', async (req, res) => {
     const focusArea = focusAreas[i % focusAreas.length];
     const filePath = path.join(__dirname, 'data', 'focus-areas', focusArea.file);
     const focusAreaProblems = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    const randomProblem = focusAreaProblems[Math.floor(Math.random() * focusAreaProblems.length)];
-    
-    const goalDetails = await getGoalDetails(randomProblem.SDG);
-    randomProblem.goalTitle = goalDetails.title;
-    randomProblem.color = goalDetails.color;
-    group.problem = randomProblem;
+    const selectedProblems = [];
 
+    // Select 5 random problems for the group
+    for (let j = 0; j < 5; j++) {
+      const randomProblem = focusAreaProblems[Math.floor(Math.random() * focusAreaProblems.length)];
+      const goalDetails = await getGoalDetails(randomProblem.SDG);
+      randomProblem.goalTitle = goalDetails.title;
+      randomProblem.color = goalDetails.color;
+      selectedProblems.push(randomProblem);
+    }
+
+    group.problems = selectedProblems;
     groups.push(group);
   }
 
@@ -115,13 +120,13 @@ app.get('/groups/:code', (req, res) => {
 });
 
 // Endpoint to handle like requests
-app.post('/like/:code/:groupIndex', (req, res) => {
-  const { code, groupIndex } = req.params;
+app.post('/like/:code/:groupIndex/:cardIndex', (req, res) => {
+  const { code, groupIndex, cardIndex } = req.params;
   const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
 
   if (fs.existsSync(sessionFilePath)) {
     let sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
-    sessionData.groups[groupIndex].likes += 1;
+    sessionData.groups[groupIndex].problems[cardIndex].likes = (sessionData.groups[groupIndex].problems[cardIndex].likes || 0) + 1;
     fs.writeFileSync(sessionFilePath, JSON.stringify(sessionData, null, 2));
     res.status(200).send('Like recorded');
   } else {
@@ -130,13 +135,13 @@ app.post('/like/:code/:groupIndex', (req, res) => {
 });
 
 // Endpoint to handle dislike requests
-app.post('/dislike/:code/:groupIndex', (req, res) => {
-  const { code, groupIndex } = req.params;
+app.post('/dislike/:code/:groupIndex/:cardIndex', (req, res) => {
+  const { code, groupIndex, cardIndex } = req.params;
   const sessionFilePath = path.join(__dirname, 'data', 'activities', `${code}.json`);
 
   if (fs.existsSync(sessionFilePath)) {
     let sessionData = JSON.parse(fs.readFileSync(sessionFilePath, 'utf8'));
-    sessionData.groups[groupIndex].dislikes += 1;
+    sessionData.groups[groupIndex].problems.splice(cardIndex, 1); // Remove the problem from the list
     fs.writeFileSync(sessionFilePath, JSON.stringify(sessionData, null, 2));
     res.status(200).send('Dislike recorded');
   } else {

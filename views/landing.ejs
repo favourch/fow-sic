@@ -18,6 +18,7 @@
       margin: 0;
       padding: 20px;
       box-sizing: border-box;
+      position: relative;
     }
     h1 {
       font-size: 2.5em;
@@ -38,19 +39,13 @@
     }
     .btn-custom:hover {
       background-color: #453535;
-      box-shadow: inset;
       color: #f0f2f5;
     }
-    /* .form-container {
-      margin-top: 20px;
-      width: 100%;
-      max-width: 300px;
-    } */
     .footer {
       margin-top: 20px;
       font-size: 1em;
       color: #666;
-      opacity: 0.1;
+      opacity: 0.2;
       text-align: center;
     }
     .footer a {
@@ -64,6 +59,79 @@
       display: block;
       text-align: center;
       max-width: 100%;
+    }
+    .question-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2em;
+      background-color: #201f1f;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .question-icon:hover {
+      background-color: #453535;
+      transform: scale(1.1);
+    }
+    .instructions {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 999;
+      overflow: auto;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+    }
+    .instructions-content {
+      background: white;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      height: 100%;
+      overflow: auto;
+    }
+    .close-btn {
+      background-color: #201f1f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+      display: block;
+      width: 100px;
+      text-align: center;
+    }
+    .close-btn:hover {
+      background-color: #453535;
+    }
+    @media (min-width: 768px) {
+      .instructions {
+        width: 25%;
+        height: 100%;
+        right: 0;
+        padding: 20px;
+      }
+      .instructions-content {
+        width: 100%;
+        height: auto;
+      }
     }
   </style>
 </head>
@@ -79,7 +147,7 @@
         <div class="form-group">
           <div class="centre-input">
             <label for="code">Enter Code:</label>
-          <input type="text" id="code" name="code" class="form-control" required>
+            <input type="text" id="code" name="code" class="form-control" required>
           </div>
         </div>
         <button type="submit" class="btn btn-custom">Submit</button>
@@ -90,12 +158,67 @@
     </div>
   </div>
 
+  <div class="question-icon" onclick="toggleInstructions()">?</div>
+
+  <div id="instructions" class="instructions">
+    <div class="instructions-content">
+      <h2>Agile Challenge Cards Activity Guidelines</h2>
+      <p>60 Minutes</p>
+      <h3>Objective:</h3>
+      <p>Each group uses Agile practices to rapidly develop solutions to sustainability challenges related to their selected focus area.</p>
+      <h3>Materials Needed:</h3>
+      <ul>
+        <li>Challenge Deck Of Cards (this project itself): Each card details a specific sustainability challenge/problem statement within one of the focus areas (Bees/Plants, Fresh Water/Oceans, Fires/Floods, Trees/Forests/Jungle) and the corresponding SDG.</li>
+        <li>Timer (Digital StopWatch)</li>
+        <li>Whiteboards and markers/ Tracking Sheet</li>
+        <li>Sticky notes and pens for rapid idea generation</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <h4>Initial Briefing (5 minutes):</h4>
+      <p>Explain the Agile principles to the students: flexibility, adaptive planning, continuous improvement, and rapid and flexible response to change. Discuss how these principles can be applied to solving sustainability challenges.</p>
+      <h4>Team Formation and Card Drawing (5 minutes):</h4>
+      <p>Students form small groups and draw 5 Challenge Cards from a deck of 50 Cards but get to keep 1 Challenge Card. The Challenge Card contains a specific sustainability issue.</p>
+      <h4>First Agile Sprint - Ideation (10 minutes):</h4>
+      <p><strong>Task:</strong> Each team uses sticky notes to brainstorm potential solutions to the challenge.</p>
+      <p><strong>Approach:</strong> Encourage rapid idea generation without judgment.</p>
+      <p><strong>Output:</strong> A collection of diverse ideas on sticky notes.</p>
+      <h4>Review and Planning (5 minutes):</h4>
+      <p><strong>Task:</strong> Teams categorize and prioritize the ideas based on feasibility and impact.</p>
+      <p><strong>Approach:</strong> Use the whiteboard or tracking sheet to group similar ideas and select the top ideas to develop further.</p>
+      <p><strong>Output:</strong> A prioritized list of ideas.</p>
+      <h4>Second Agile Sprint - Solution Development (15 minutes):</h4>
+      <p><strong>Task:</strong> Develop a detailed plan or prototype for the top ideas.</p>
+      <p><strong>Approach:</strong> Encourage iterative refinement. Teams can split tasks among members to focus on different aspects of the solution, such as research, design, or impact analysis.</p>
+      <p><strong>Output:</strong> A basic prototype or detailed solution plan.</p>
+      <h4>Team Presentation and Feedback (10 minutes):</h4>
+      <p><strong>Task:</strong> Each group presents their solution to the class.</p>
+      <p><strong>Approach:</strong> Other teams provide constructive feedback based on a set of criteria, such as innovation, impact, and practicality.</p>
+      <p><strong>Output:</strong> Refined project proposals.</p>
+      <h4>Retrospective and Iterative Improvement (5 minutes):</h4>
+      <p><strong>Task:</strong> Reflect on what went well and what could be improved.</p>
+      <p><strong>Approach:</strong> Discuss as a whole class or within small groups to identify lessons learned and possible improvements for future sprints.</p>
+      <p><strong>Output:</strong> Insights that can guide future projects and iterations.</p>
+      <h3>Follow-Up:</h3>
+      <p>Encourage students to take the feedback and insights from this session to refine their projects further.</p>
+      <button class="close-btn" onclick="toggleInstructions()">Close</button>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     function showStudentInput() {
       document.getElementById('student-input').style.display = 'block';
+    }
+
+    function toggleInstructions() {
+      var instructions = document.getElementById('instructions');
+      if (instructions.style.display === 'block') {
+        instructions.style.display = 'none';
+      } else {
+        instructions.style.display = 'block';
+      }
     }
   </script>
 </body>
